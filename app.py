@@ -16,7 +16,7 @@ from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.chat_history import BaseChatMessageHistory
 
 
-# -----------------------
+# -------------------------
 # Streamlit Secrets (Cloud-safe)
 # -----------------------
 required_secrets = ["HF_TOKEN", "GROQ_API_KEY"]
@@ -152,3 +152,4 @@ Context:
         for i, doc in enumerate(retrieved_docs):
             st.write(f"--- Document {i+1} ---")
             st.write(doc.page_content)
+
